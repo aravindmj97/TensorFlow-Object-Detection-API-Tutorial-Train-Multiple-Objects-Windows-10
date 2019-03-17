@@ -348,7 +348,10 @@ Each step of training reports the loss. It will start high and get lower and low
 You can view the progress of the training job by using TensorBoard. To do this, open a new instance of Anaconda Prompt, activate the tensorflow1 virtual environment, change to the C:\tensorflow1\models\research\object_detection directory, and issue the following command:
 ```
 (tensorflow1) C:\tensorflow1\models\research\object_detection>tensorboard --logdir=training
-tensorboard --logdir=ENTERLOGFOLDERPATH --host localhost --port 8088
+```
+If above command doesn't show anything on the browser, use the following command
+```
+(tensorflow1) C:\tensorflow1\models\research\object_detection>tensorboard --logdir=ENTERLOGFOLDERPATH --host localhost --port 8088
 ```
 This will create a webpage on your local machine at YourPCName:6006, which can be viewed through a web browser. The TensorBoard page provides information and graphs that show how the training is progressing. One important graph is the Loss graph, which shows the overall loss of the classifier over time.
 
